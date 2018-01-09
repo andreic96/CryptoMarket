@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Cryptocurrency Market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Cryptocurrency Market</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="/">Home</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li > <a href="/contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="well">
+                        <form id="messData">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required="required" /></div>
+                                </div>
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject" class="form-control" required="required">
+                                        <option value="na" selected="">Choose One:</option>
+                                        <option value="service">Data errors</option>
+                                        <option value="suggestions">Suggestions</option>
+                                        <option value="product">Other</option>
+                                    </select>
+                                <div class="form-group">
+                                    <label for="name">Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary pull-right" id="btnSendMess">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-9 night-mode-btn">
+            <!--<label for="night-mode">Night mode</label>-->
+            <span class="label label-warning">Night mode</span>
+            <div class="btn-group" data-toggle="buttons" id="night-mode-btn">
+                <label class="btn btn-default btn-sm active">
+                    <input type="radio"> Off
+                </label>
+                <label class="btn btn-default btn-sm">
+                    <input type="radio"> On
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/edit.content.js"></script>
+<script src="scripts/send.data.js"></script>
+</body>
+</html>
