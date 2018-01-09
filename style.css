@@ -61,5 +61,14 @@ body.night-mode .panel{
     background-color: #0c0c0c;
 }
 
+body.night-mode .well{
+    background-color: #0c0c0c;
+    border-color: goldenrod;
+}
+
+body.night-mode .well > input{
+    background-color: cornsilk;
+}
+
 
 

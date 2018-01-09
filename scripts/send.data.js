@@ -27,4 +27,6 @@ document.getElementById('messData').addEventListener('submit', function (event) 
     event.preventDefault();
     var url = '/mail.php';
     responseData(url);
+
+    document.getElementsByClassName('well')[0].innerHTML = "<div class=\"alert alert-success text-center\">\n" + "  <h1>Message sent successfully.</h1>\n" + "</div>";
 });
