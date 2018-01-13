@@ -1,0 +1,74 @@
+nav ul li:active{
+    background-color: #080808;
+}
+
+.percentage{
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.percentage-up{
+    color:green;
+}
+
+.percentage-down{
+    color:red;
+}
+
+.form-group select {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    float: right;
+}
+
+.label{
+    font-size: 1em;
+}
+
+.table-responsive{
+    position: relative;
+}
+
+.spinner{
+    position: absolute;
+    left: 45%;
+}
+
+.night-mode-btn{
+    margin: 20px 0;
+}
+
+body.night-mode{
+    background-color: #0c0c0c;
+    color:darkgoldenrod;
+}
+
+body.night-mode .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #286090;
+}
+
+body.night-mode .percentage-up{
+    color:#4a9955;
+}
+
+body.night-mode .panel-default{
+    border-color: goldenrod;
+}
+
+body.night-mode .panel{
+    background-color: #0c0c0c;
+}
+
+body.night-mode .well{
+    background-color: #0c0c0c;
+    border-color: goldenrod;
+}
+
+body.night-mode .well > input{
+    background-color: cornsilk;
+}
+
+
+

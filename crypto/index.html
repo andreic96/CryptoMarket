@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cryptocurrency Market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/crypto">Cryptocurrency Market</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="/crypto">Home</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li > <a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <input type="text" id="search-box" placeholder="Search">
+                        </div>
+                        <div class="col-md-5"></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <span class="label label-info">Items/page</span>
+                                <!--<label for="itemsonpage">Sas</label>-->
+                                <select name="itemsonpage" id="itemsonpage" class="form-control">
+                                    <option value="10"> 10 </option>
+                                    <option value="20"> 20 </option>
+                                    <option value="50"> 50 </option>
+                                    <option value="100"> 100 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <object data="Spinner.svg" type="image/svg+xml" class="spinner"></object>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Rank no.</th>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Market Capital</th>
+                    <th>Supply</th>
+                    <th>Price</th>
+                    <th>24h Change</th>
+                </tr>
+                </thead>
+                <tbody id="coins-data">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 night-mode-btn">
+            <!--<label for="night-mode">Night mode</label>-->
+            <span class="label label-warning">Night mode</span>
+            <div class="btn-group" data-toggle="buttons" id="night-mode-btn">
+                <label class="btn btn-default btn-sm active">
+                    <input type="radio"> Off
+                </label>
+                <label class="btn btn-default btn-sm">
+                    <input type="radio"> On
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="pagination pull-right">
+                <li class="prev">
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="next">
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="scripts/request.data.js"></script>
+<script src="scripts/edit.content.js"></script>
+</body>
+</html>
